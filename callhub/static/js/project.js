@@ -50,7 +50,7 @@ var submitForm = function() {
 
 			var series_number = "Last number of fibonacci series is:"+ response.number
 
-			var time = "Last number of fibonacci series is:"+ response.time
+			var time = "Time taken:"+ response.time
 
 			$("h5.timetaken").html(time);
 			$("h5.number").html(series_number);
