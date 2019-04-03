@@ -1,0 +1,27 @@
+{% extends "fibonacci/base.html" %}
+
+{% block title %}
+	Fibonacci Number
+{% endblock %}
+
+{% block content %}
+	
+	<form class="ui form" action="{{action}}" method="post">
+		<div class="required field">
+			<label>Sequence Number</label>
+			<input type="text" name="number">
+		</div>
+
+		<div class="field">
+			{% csrf_token %}
+			<input type="submit" class="ui tiny uppercase positive action submit button" value="Save">
+		</div>
+	</form>
+
+	<h5 class="number"></h5>
+	<h5 class="timetaken"></h5>
+
+	<h5 class="error"></h5>
+	
+
+{% endblock %}
