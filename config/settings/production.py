@@ -9,7 +9,7 @@ SECRET_KEY = env(
     default="FhW4UgBwucbAo8Nkvb38sqSpNOxsrJhrSuzjgQJybh06g81locWMDODQZpvfZWgY",
 )
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["example.com"])
+ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=[".herokuapp.com"])
 
 # DATABASES
 # ------------------------------------------------------------------------------
