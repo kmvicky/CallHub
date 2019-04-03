@@ -1,6 +1,7 @@
 import fibonacci.views as views
 
 from django.urls import include, path, re_path
+from django.conf.urls.static import static
 
 app_name = 'fibonacci'
 
